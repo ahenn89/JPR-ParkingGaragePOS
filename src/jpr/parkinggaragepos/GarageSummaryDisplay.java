@@ -8,8 +8,8 @@ package jpr.parkinggaragepos;
  *
  * @author jorda_000
  */
-public interface ReceiptDisplay {
+public interface GarageSummaryDisplay {
     
-    public abstract String getReceiptText(String carId, double hoursParked, double feeCharged);
+    public abstract String getGarageSummary();
     
 }
