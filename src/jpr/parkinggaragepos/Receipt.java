@@ -24,7 +24,7 @@ public class Receipt {
     
     
     public String getReceiptText(ReceiptDisplay disp){
-	return disp.getReceiptText(customer.getCustomerId(), getHours() , getCharge());
+	return disp.getReceiptText(customer.getCustomerId(), getHours() , getCharge(), startDate, endDate, customer.getCustomerName());
     }
     
     

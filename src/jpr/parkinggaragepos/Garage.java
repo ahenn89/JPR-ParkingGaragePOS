@@ -20,6 +20,7 @@ public class Garage {
     private Reader read;
     private CustomerDataSource data;
     private Writer write;
+    private GarageSummaryDisplay gsd;
     //other
     private Receipt receipt;
     private List<Receipt> receiptList = new <Receipt>ArrayList();
@@ -35,8 +36,11 @@ public class Garage {
 	this.write = write;
     }
 
-    
-    
+    public String getGarageSummary(GarageSummaryDisplay gsd) {
+	return gsd.getGarageSummary(this.getTotalGarageTransactions(), this.getTotalGarageHours(), this.getTotalGarageFees());
+
+    }
+
     /**
      * Nothing much needs to be done here, it just creates a blank receipt that
      * can begin to be populated with items and attributes.
@@ -70,13 +74,13 @@ public class Garage {
 	double fees = 0;
 
 	for (Receipt r : receiptList) {
-	    fees += r.getHours();
+	    fees += r.getCharge();
 	}
 
 	return fees;
     }
 
-    public double getTotalGarageTransactions() {
+    public int getTotalGarageTransactions() {
 	int tran = 0;
 
 	for (Receipt r : receiptList) {

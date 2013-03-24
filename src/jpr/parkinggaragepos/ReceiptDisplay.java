@@ -4,12 +4,14 @@
  */
 package jpr.parkinggaragepos;
 
+import java.util.Date;
+
 /**
  *
  * @author jorda_000
  */
 public interface ReceiptDisplay {
     
-    public abstract String getReceiptText(String carId, double hoursParked, double feeCharged);
+    public abstract String getReceiptText(String carId, double hoursParked, double feeCharged, Date startDate, Date endDate, String customerName);
     
 }

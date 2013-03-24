@@ -39,6 +39,18 @@ public class Thrifty implements SalesStrategy {
 
     }
 
+    public static double getMinCharge() {
+	return minCharge;
+    }
+
+    public static double getMinThreshold() {
+	return minThreshold;
+    }
+
+    public static double getHourlyRate() {
+	return hourlyRate;
+    }
+
     public static void main(String[] args) {
 
 	Thrifty v = new Thrifty();
