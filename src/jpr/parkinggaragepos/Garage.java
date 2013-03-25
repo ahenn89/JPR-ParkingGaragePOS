@@ -272,6 +272,6 @@ public class Garage {
      * will read from the user input.
      */
     public void setCustomer() {
-	receipt.setCustomer(data.findByCustomerId(read.readAndReturn("Enter Customer Number")));
+	receipt.setCustomer(data.findByCustomerId(read.readAndReturn("Please Enter Your Customer Number")));
     }
 }

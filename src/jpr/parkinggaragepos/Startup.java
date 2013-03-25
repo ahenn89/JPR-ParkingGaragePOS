@@ -31,7 +31,7 @@ public class Startup {
 
 
 	
-	//set readers, writers, and customer data source
+	//set readers, writers, and customer data source, these can be changed as needed
 	Reader rd = new GUIReader();
 	Writer wr = new ConsoleWriter();
 	CustomerDataSource data = new FakeDatabase();	
