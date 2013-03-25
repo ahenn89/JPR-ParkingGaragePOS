@@ -38,8 +38,8 @@ public class Startup {
 	
 	
 	//pick garage, comment out for testing purposes
-	SalesStrategy ss = new BestValue();
-	//SalesStrategy ss = new Thrifty();
+	//SalesStrategy ss = new BestValue();
+	SalesStrategy ss = new Thrifty();
 	
 	//choose display types
 	ReceiptDisplay disp = new ReceiptDisplayStandard();
@@ -83,6 +83,8 @@ public class Startup {
 	startDate.setHours(startDate.getHours() - 6);
 	
 	
+	System.out.println("");
+	
 	
 	/*----------------------------------------*/
 	
@@ -102,6 +104,10 @@ public class Startup {
 	
 	//display garage totals for testing (does not display to customer)
 	wr.write(k.getGarageSummary(gDisp));	
+	
+	//change time ranges
+	startDate.setHours(startDate.getHours() -2);
+	
 	
 	System.out.println("");
 	
