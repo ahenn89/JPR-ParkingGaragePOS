@@ -6,7 +6,11 @@ import java.util.Date;
 
 /**
  *
- * @author jorda_000
+ * This is the standard display type for the receipt.  This class determines how
+ * the data is displayed on the receipt.
+ * 
+ * 
+ * @author Jordan Ryder
  */
 public class ReceiptDisplayStandard implements ReceiptDisplay {
 

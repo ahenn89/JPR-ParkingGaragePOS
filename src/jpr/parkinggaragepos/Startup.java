@@ -1,4 +1,8 @@
 
+
+
+
+
 package jpr.parkinggaragepos;
 
 import inputoutput.*;
@@ -6,13 +10,22 @@ import java.util.Date;
 
 /**
  * 
+ * This is the startup/testing method for the Garage Fee application.  
+ * Any hard coding is applied in this program, no hard coding of values is needed
+ * in the other classes.  
  * 
  * 
- * 
- * @author jorda_000
+ * @author Jordan Ryder
  */
 public class Startup {
 
+    
+    /**
+     * Main method for testing
+     * 
+     * 
+     * @param args 
+     */
     public static void main(String[] args) {
 
 
@@ -69,7 +82,7 @@ public class Startup {
 	//change time ranges
 	startDate.setHours(startDate.getHours() - 6);
 	
-	System.out.println("");
+	
 	
 	/*----------------------------------------*/
 	
@@ -90,12 +103,26 @@ public class Startup {
 	//display garage totals for testing (does not display to customer)
 	wr.write(k.getGarageSummary(gDisp));	
 	
+	System.out.println("");
 	
+	/*----------------------------------------*/
 	
+	//car #3 enters
+	k.startNewSale(startDate, ss);	 
+	k.setCustomer(); //customer will be asked to entere their code in
 	
+	//car is leaving
+	k.setEndDate(endDate);
 	
+	//customer gets receipt
+	rt = k.printReceipt(disp);
+	wr.write(rt);
 	
+	//close sale and add to daily totals
+	k.closeSale();
 	
+	//display garage totals for testing (does not display to customer)
+	wr.write(k.getGarageSummary(gDisp));	
 	
 	
     }

@@ -6,7 +6,13 @@ package jpr.parkinggaragepos;
 
 /**
  *
- * @author jorda_000
+ * This is the testing version of the database.  The only purpose of this class
+ * is to simulate a database in order to pull customer data from.  This will eventually 
+ * be changed to a real database.  Each garage may have different requirements for
+ * the data.
+ * 
+ * 
+ * @author Jordan Ryder
  */
 public class FakeDatabase implements CustomerDataSource {
     

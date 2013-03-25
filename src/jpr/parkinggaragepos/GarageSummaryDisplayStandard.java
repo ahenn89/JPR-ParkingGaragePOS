@@ -1,17 +1,27 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
+
 package jpr.parkinggaragepos;
 
 import java.text.NumberFormat;
 
 /**
  *
- * @author jorda_000
+ * This is a sub class for the way the garage update text displays
+ * 
+ * @author Jordan Ryder
  */
 public class GarageSummaryDisplayStandard implements GarageSummaryDisplay {
 
+    
+    /**
+     * 
+     * This method does the formatting of the text to display
+     * 
+     * @param transactions
+     * @param hours
+     * @param fees
+     * @return Text that identifies the totals for the garage
+     */
     @Override
     public String getGarageSummary(int transactions, double hours, double fees) {
 	   

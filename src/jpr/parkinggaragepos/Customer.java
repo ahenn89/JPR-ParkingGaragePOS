@@ -1,12 +1,9 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package jpr.parkinggaragepos;
 
 /**
  *
- * @author jorda_000
+ * @author Jordan Ryder
  */
 public class Customer {
     private String customerId;
@@ -14,6 +11,8 @@ public class Customer {
 
     
     /**
+     * 
+     * Returns the name of the customer
      * 
      * @return customerName which is the full name of the customer
      */

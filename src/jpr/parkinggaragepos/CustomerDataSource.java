@@ -1,12 +1,12 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
+
 package jpr.parkinggaragepos;
 
 /**
  *
- * @author jorda_000
+ * This interface dictates what methods a data source needs to have
+ * 
+ * @author Jordan Ryder
  */
 public interface CustomerDataSource {
     
